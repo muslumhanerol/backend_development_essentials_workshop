@@ -2,11 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace course_project_one.Controllers
 {
-    public class = BootcampController : Controller{
-        public string index()
+    public class BootcampController : Controller
     {
-        return "Bootcamp/index";
+
+
     }
 
-}
 }
