@@ -1,15 +1,36 @@
+@model Bootcamp
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    Bootcamp/Index
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+            <div class="container">
+                <a href="#" class="navbar-brand">Techcareer.net</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a asp-controller="Bootcamp" asp-action="Index" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Bootcamp" asp-action="List" class="nav-link">Bootcamp</a>
+                    </li>
+                </ul>
+            </div>
 
+        </nav>
+    </header>
+    <p>@Model.id</p>
+    <p>@Model.Title</p>
+    <p>@Model.Description</p>
 </body>
 
 </html>
+
+@* 1. Model > Bootcamp.cs içerisinde model oluşturuldu. 2.BootcampController.cs içerisind nesne oluşturuldu ve view e yani buraya gönderildi. Artık buradan en üst satıra @model Bootcamp yazarak Bootcamp.cs içerisinde BootcampController.cs tarafında atadığım özelliklerin hepsi buraya gelecek.  *@

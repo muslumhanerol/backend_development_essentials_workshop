@@ -1,3 +1,4 @@
+@model List<Bootcamp>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +9,17 @@
 </head>
 
 <body>
-    Bootcamp/List
+    @foreach (var bootcamp in Model)
+    {
+        <div>
+            <img src="~/img/@bootcamp.Image" alt="" style="width: 200px;">
+            <h2>@bootcamp.Title</h2>
+            <p>@bootcamp.Description</p>
+        </div>
+    }
 
 </body>
 
 </html>
+
+@* 1. Model de liste halindeki veriyi en üstte @model List<Bootcamp> tanımlayarak çektik. 2.body içerisinde foreach la verileri kullandık. *@

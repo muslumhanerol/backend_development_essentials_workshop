@@ -4,4 +4,4 @@
 
 # 3. View klasörü içerisinde herbir sayfa için cshtml dosyası oluştur. Ör: index.cshtml, list.cshtml.
 
-# 4. Model içerisini doldur. Veri tabanı için.
+# 4.  Veri tabanı için Model içerisinde class oluştur ör:Bootcamp.cs ve içerisini doldur.
