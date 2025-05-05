@@ -1,56 +1,21 @@
 @model List<Bootcamp>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <header></header>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-success">
-        <div class="container">
-            <a href="#" class="navbar-brand">Techcareer.net</a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a asp-controller="Bootcamp" asp-action="Index" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a asp-controller="Bootcamp" asp-action="List" class="nav-link">Bootcamp</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    </header>
-
-    <div class="container p-3">
-        <main>
-            @foreach (var bootcamp in Model)
-            {
-                <div class="card mb-3" id="Bootcamp @bootcamp.id">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="~/img/@bootcamp.Image" alt="" class="img-fluid rounded-start" style="width: 420px;">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h2 class="card-title">@bootcamp.Title</h2>
-                                <p class="card-text">@bootcamp.Description</p>
-                            </div>
-                        </div>
-                    </div>
+@foreach (var bootcamp in Model)
+{
+    <div class="card mb-3" id="Bootcamp @bootcamp.id">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="~/img/@bootcamp.Image" alt="" class="img-fluid rounded-start" style="width: 420px;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">@bootcamp.Title</h2>
+                    <p class="card-text">@bootcamp.Description</p>
                 </div>
-
-
-            }
-        </main>
+            </div>
+        </div>
     </div>
+}
 
-</body>
-
-</html>
 
 @* 1. Model de liste halindeki veriyi en üstte @model List<Bootcamp> tanımlayarak çektik. 2.body içerisinde foreach la verileri kullandık. *@
