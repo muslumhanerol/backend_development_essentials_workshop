@@ -12,6 +12,7 @@ namespace project_one.Controllers
             bootcamp.id = 1;
             bootcamp.Title = "Backend Bootcamp";
             bootcamp.Description = "Eğitim 24 Nisan'da başladı.";
+            bootcamp.Image = "1.png";
             return View(bootcamp);
         }
         public IActionResult List()

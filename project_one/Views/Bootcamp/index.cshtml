@@ -23,12 +23,22 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
     </header>
-    <p>@Model.id</p>
-    <p>@Model.Title</p>
-    <p>@Model.Description</p>
+
+    <div class="container p-3">
+        <main>
+            <div class="card" style="width: 18rem;"></div>
+            <img src="~/img/@Model.Image" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Title</h5>
+                <p class="card-text">@Model.Description</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+    </div>
+
+    </main>
+    </div>
 </body>
 
 </html>
