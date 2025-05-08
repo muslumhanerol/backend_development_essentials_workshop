@@ -1,5 +1,10 @@
 @model Bootcamp
 
+@section Header {
+    @* _Header.cshtml Partialı *@
+    @await Html.PartialAsync("_Header")
+}
+
 <div class="card" style="width: 18rem;"></div>
 <img src="~/img/@Model.Image" style="width: 320px;" class="card-img-top" alt="...">
 <div class="card-body">
