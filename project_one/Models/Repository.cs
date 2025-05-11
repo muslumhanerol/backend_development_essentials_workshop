@@ -7,8 +7,8 @@ namespace project_one.Models
         static Repository()
         {
             _bootcamps = new List<Bootcamp>(){
-                 new Bootcamp(){id = 1, Title = "Backend Bootcamp", Description = "Güzel Başladı",Image="1.png", IsActive=false, IsHome=true},
-                new Bootcamp(){id = 2, Title = "Game Bootcamp", Description = "Güzel Başladı",Image="2.png", IsActive=true, IsHome=true},
+                 new Bootcamp(){id = 1, Title = "Backend Bootcamp", Description = "Güzel Başladı",Image="1.png", IsActive=true, IsHome=true},
+                new Bootcamp(){id = 2, Title = "Game Bootcamp", Description = "Güzel Başladı",Image="2.png", IsActive=true, IsHome=false},
                 new Bootcamp(){id = 3, Title = "React Bootcamp", Description = "Güzel Başladı",Image="3.jpg", IsActive=true, IsHome=true}
             };
         }
