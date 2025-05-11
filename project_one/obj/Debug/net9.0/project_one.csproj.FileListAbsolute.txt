@@ -18,7 +18,6 @@ C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\p
 C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\scopedcss\bundle\project_one.styles.css
 C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\scopedcss\projectbundle\project_one.bundle.scp.css
-C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\compressed\42ucxlgh1r-b9sayid5wm.gz
 C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\compressed\u6smwes934-61n19gt1b8.gz
 C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\compressed\2cvlbmnn8q-xtxxf3hu2r.gz
 C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\compressed\myi7893dsl-bqjiyaj88i.gz
@@ -96,3 +95,4 @@ C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\r
 C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\project_one.pdb
 C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\project_one.genruntimeconfig.cache
 C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\ref\project_one.dll
+C:\GitHub\backend_development_essentials_workshop\project_one\obj\Debug\net9.0\compressed\42ucxlgh1r-7jlfzgk10h.gz
