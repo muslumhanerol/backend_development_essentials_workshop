@@ -12,13 +12,13 @@ namespace project_second_formsApp.Models
             _categories.Add(new Category { CategorytId = 2, Name = "Bilgisayar" });
 
 
-            _products.Add(new Product { ProductId = 1, Name = "Macbook", Image = "1.jpeg", Price = 80000, IsActive = true, CatagoryId = 2 });
+            _products.Add(new Product { ProductId = 1, Name = "Macbook", Image = "1.jpg", Price = 80000, IsActive = true, CatagoryId = 2 });
 
-            _products.Add(new Product { ProductId = 2, Name = "Macbook Pro", Image = "3.jpeg", Price = 90000, IsActive = true, CatagoryId = 2 });
+            _products.Add(new Product { ProductId = 2, Name = "Macbook Pro", Image = "3.jpg", Price = 90000, IsActive = true, CatagoryId = 2 });
 
-            _products.Add(new Product { ProductId = 3, Name = "IPhone 15 Pro", Image = "2.jpeg", Price = 100000, IsActive = true, CatagoryId = 1 });
+            _products.Add(new Product { ProductId = 3, Name = "IPhone 15 Pro", Image = "2.jpg", Price = 100000, IsActive = true, CatagoryId = 1 });
 
-            _products.Add(new Product { ProductId = 4, Name = "IPhone 15 Pro Max", Image = "4.jpeg", Price = 120000, IsActive = true, CatagoryId = 1 });
+            _products.Add(new Product { ProductId = 4, Name = "IPhone 15 Pro Max", Image = "4.jpg", Price = 120000, IsActive = true, CatagoryId = 1 });
         }
 
 

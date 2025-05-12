@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "project_second_formsApp/1.0.0": {
+        "runtime": {
+          "project_second_formsApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "project_second_formsApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
