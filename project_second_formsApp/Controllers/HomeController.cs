@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using project_second_formsApp.Models;
 
 namespace project_second_formsApp.Controllers;
@@ -17,9 +18,14 @@ public class HomeController : Controller
         var products = Repository.Products;
         if (!String.IsNullOrEmpty(searchString))
         {
+            ViewBag.SearchString = searchString; //Veriyi geçici olarak depoladım.
             products = products.Where(p => p.Name.ToLower().Contains(searchString)).ToList();
 
         }
+
+        //Kategori listeleme.
+        ViewBag.Categories = new SelectList(Repository.Categories, "CatagoryId", "Name");
+
         return View(products);
     }
 
@@ -29,3 +35,5 @@ public class HomeController : Controller
     }
 
 }
+
+//ViewBag.SearchString = searchString; = arama yapıldığında aranan kelimenin search inputunda kalmasını sağlar. Layout kısmında value="@ViewBag.SearchString" çağır.

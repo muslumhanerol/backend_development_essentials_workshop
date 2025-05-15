@@ -24,7 +24,7 @@ namespace project_second_formsApp.Models
 
         //Dış tarafa vermek için.
         public static List<Product> Products { get { return _products; } }
-        public static List<Category> Catageries { get { return _categories; } }
+        public static List<Category> Categories { get { return _categories; } }
         //Bu içeriği kullanmak için Controller>HomeController.cs 
 
     }
