@@ -8,8 +8,8 @@ namespace project_second_formsApp.Models
 
         static Repository()
         {
-            _categories.Add(new Category { CategorytId = 1, Name = "Telefon" });
-            _categories.Add(new Category { CategorytId = 2, Name = "Bilgisayar" });
+            _categories.Add(new Category { CategoryId = 1, Name = "Telefon" });
+            _categories.Add(new Category { CategoryId = 2, Name = "Bilgisayar" });
 
 
             _products.Add(new Product { ProductId = 1, Name = "Macbook", Image = "1.jpg", Price = 80000, IsActive = true, CatagoryId = 2 });

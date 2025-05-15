@@ -13,19 +13,24 @@ public class HomeController : Controller
 
     }
 
-    public IActionResult Index(string searchString)
+    public IActionResult Index(string searchString, string category)
     {
+        //ürün listeleme
         var products = Repository.Products;
         if (!String.IsNullOrEmpty(searchString))
         {
             ViewBag.SearchString = searchString; //Veriyi geçici olarak depoladım.
             products = products.Where(p => p.Name.ToLower().Contains(searchString)).ToList();
-
         }
 
-        //Kategori listeleme.
-        ViewBag.Categories = new SelectList(Repository.Categories, "CatagoryId", "Name");
+        if (!String.IsNullOrEmpty(category) && category != "0")
+        {
+            products = products.Where(p => p.CatagoryId == int.Parse(category)).ToList();
+        }
 
+
+        //Kategori listeleme.
+        ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name", category);
         return View(products);
     }
 
