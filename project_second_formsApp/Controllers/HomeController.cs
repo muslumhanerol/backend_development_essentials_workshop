@@ -6,16 +6,21 @@ namespace project_second_formsApp.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
 
     public HomeController()
     {
 
     }
 
-    public IActionResult Index()
+    public IActionResult Index(string searchString)
     {
-        return View(Repository.Products);
+        var products = Repository.Products;
+        if (!String.IsNullOrEmpty(searchString))
+        {
+            products = products.Where(p => p.Name.ToLower().Contains(searchString)).ToList();
+
+        }
+        return View(products);
     }
 
     public IActionResult Privacy()
