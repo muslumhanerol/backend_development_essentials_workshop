@@ -29,9 +29,16 @@ public class HomeController : Controller
         }
 
 
-        //Kategori listeleme.
-        ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name", category);
-        return View(products);
+        // Kategori listeleme. Viewmodel den çekildiği için artık ihtiyaç yok.
+        // ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name", category);
+        var model = new ProductViewModel
+        {
+            //Modelin içindeki Products buradaki products eşit.
+            Products = products,
+            Categories = Repository.Categories,
+            SelectedCategory = category
+        };
+        return View(model);
     }
 
     public IActionResult Privacy()
