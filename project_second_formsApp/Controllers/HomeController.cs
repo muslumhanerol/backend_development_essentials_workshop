@@ -41,7 +41,14 @@ public class HomeController : Controller
         return View(model);
     }
 
-    public IActionResult Privacy()
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Product model)
     {
         return View();
     }
