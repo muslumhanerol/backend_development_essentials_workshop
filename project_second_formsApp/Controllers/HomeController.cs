@@ -25,7 +25,7 @@ public class HomeController : Controller
 
         if (!String.IsNullOrEmpty(category) && category != "0")
         {
-            products = products.Where(p => p.CatagoryId == int.Parse(category)).ToList();
+            products = products.Where(p => p.CategoryId == int.Parse(category)).ToList();
         }
 
 
@@ -44,6 +44,7 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult Create()
     {
+        ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name");
         return View();
     }
 

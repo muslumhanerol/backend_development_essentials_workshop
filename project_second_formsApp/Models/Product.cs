@@ -13,7 +13,7 @@ namespace project_second_formsApp.Models
         [Display(Name = "Ürün Görseli")]
         public string Image { get; set; } = string.Empty;
         public bool IsActive { get; set; }
-        public int CatagoryId { get; set; }
+        public int CategoryId { get; set; }
     }
 }
 
