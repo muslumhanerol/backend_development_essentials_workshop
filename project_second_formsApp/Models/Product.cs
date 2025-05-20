@@ -9,10 +9,12 @@ namespace project_second_formsApp.Models
 
         [Required]
         [Display(Name = "Ürün Adı")]
-        public string Name { get; set; } = string.Empty;
+        [StringLength(100)]
+        public string? Name { get; set; } = string.Empty;
 
-        [Required]
+        [Required(ErrorMessage = "Ürün Fiyatı boş bırakılamaz.")]
         [Display(Name = "Ürün Fiyatı")]
+        [Range(0, 150000)]
         public decimal? Price { get; set; }
 
         [Display(Name = "Ürün Görseli")]
@@ -25,3 +27,5 @@ namespace project_second_formsApp.Models
 
 
 // string.Empty; = Hiçbir zaman null olmayacak "".
+
+// Hem [Required] hemde ? kullanmak mantıklı mı? Hem dolu olması gerekşyor hem null able yapıyoruz neden? = Veriyi eklerken hata almamak için. Decimal price değeri form post edilmeden önce bile model biding sırasında hata oluşturabilir. Ancak bu yöntemi kullanırsak biding işleminin problemsiz gerçekleştirir. 

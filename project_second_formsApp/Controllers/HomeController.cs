@@ -20,7 +20,7 @@ public class HomeController : Controller
         if (!String.IsNullOrEmpty(searchString))
         {
             ViewBag.SearchString = searchString; //Veriyi geçici olarak depoladım.
-            products = products.Where(p => p.Name.ToLower().Contains(searchString)).ToList();
+            products = products.Where(p => p.Name!.ToLower().Contains(searchString)).ToList();
         }
 
         if (!String.IsNullOrEmpty(category) && category != "0")
@@ -52,10 +52,19 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Create(Product model)
     {
-        Repository.CreateProduct(model); //Repository üzerinden CreateProduct ı çağır ve ona modele gelen bilgileri yazdır.
-        return RedirectToAction("Index");
+        if (ModelState.IsValid)
+        {
+            model.ProductId = Repository.Products.Count + 1; //id sıfır görünüyordu artık 1 ekleyecek.
+            Repository.CreateProduct(model); //Repository üzerinden CreateProduct ı çağır ve ona modele gelen bilgileri yazdır.
+            return RedirectToAction("Index");
+        }
+        ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name"); //Sayfa yenilendiğinde veriler gelmiyotdu bu yüzden burada da çağırdık.
+        return View(model);
+
     }
 
 }
+
+//ViewBag = bir kere veri taşır.
 
 //ViewBag.SearchString = searchString; = arama yapıldığında aranan kelimenin search inputunda kalmasını sağlar. Layout kısmında value="@ViewBag.SearchString" çağır.
