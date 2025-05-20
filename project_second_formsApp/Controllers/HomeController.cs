@@ -44,6 +44,7 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult Create()
     {
+        //Create.cshtml içerisine gönderdik ordan verileri çektik.
         ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name");
         return View();
     }
@@ -51,7 +52,8 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Create(Product model)
     {
-        return View();
+        Repository.CreateProduct(model); //Repository üzerinden CreateProduct ı çağır ve ona modele gelen bilgileri yazdır.
+        return RedirectToAction("Index");
     }
 
 }

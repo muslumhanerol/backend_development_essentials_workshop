@@ -24,6 +24,13 @@ namespace project_second_formsApp.Models
 
         //Dış tarafa vermek için.
         public static List<Product> Products { get { return _products; } }
+
+        //Create işlemi
+        public static void CreateProduct(Product entity)
+        {
+            _products.Add(entity); //entity bilgilerini productsa ekle
+        }
+
         public static List<Category> Categories { get { return _categories; } }
         //Bu içeriği kullanmak için Controller>HomeController.cs 
 
