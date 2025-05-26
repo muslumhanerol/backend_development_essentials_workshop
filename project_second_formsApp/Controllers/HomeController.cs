@@ -76,8 +76,17 @@ public class HomeController : Controller
                     {
                         await imageFile.CopyToAsync(stream);
                     }
+                    model.Image = randomFileName;
+                }
+                catch
+                {
+                    ModelState.AddModelError("", "Dosya yüklenirken bir hata oluştu!");
                 }
             }
+        }
+        else
+        {
+            ModelState.AddModelError("", "Lütfen bir resim seçiniz!");
         }
         if (ModelState.IsValid)
         {
