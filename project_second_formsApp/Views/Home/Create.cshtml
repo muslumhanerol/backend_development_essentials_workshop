@@ -4,7 +4,7 @@
 }
 
 
-<form asp-action="Create" method="post">
+<form asp-action="Create" method="post" enctype="multipart/form-data">
     @* Tüm hatalar validationları kullanıcıya göstermek. Product.cs de validation yaptık. *@
     <div asp-validation-summary="All"></div>
     <div class="mb-3">
@@ -20,9 +20,14 @@
 
     </div>
 
-    <div class="mb-3">
+    @* eski hali *@
+    @* <div class="mb-3">
         <label asp-for="Image" class="form-label"></label>
         <input asp-for="Image" class="form-control">
+    </div> *@
+    @* enctype="multipart/form-data" özellikli hali. Dosya seçme. *@
+    <div class="mb-3">
+        <input type="file" name="ImageFile" id="ImageFile" class="form-control">
     </div>
 
     <div class="mb-3">
