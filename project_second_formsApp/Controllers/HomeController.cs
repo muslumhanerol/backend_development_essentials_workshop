@@ -65,7 +65,18 @@ public class HomeController : Controller
             }
             else
             {
+                //Belli bir formata dönüştürme. uniq isim ver extensions yaz.
                 var randomFileName = string.Format($"{Guid.NewGuid().ToString()}{extensions}");
+                //Resmi kaydetme yolu.
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", randomFileName);
+                try
+                {
+                    //bir kopyasını kaydet.
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(stream);
+                    }
+                }
             }
         }
         if (ModelState.IsValid)
