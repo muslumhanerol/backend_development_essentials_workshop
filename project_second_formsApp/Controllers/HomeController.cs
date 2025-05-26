@@ -50,8 +50,24 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult Create(Product model)
+    public async Task<IActionResult> Create(Product model, IFormFile imageFile)
     {
+        var allowenExtensions = new[] { ".jpg", ".jpeg", ".png" };
+        if (imageFile != null)
+        {
+            //resmin uzantısı ile adını birbirinden ayırır.
+            var extensions = Path.GetExtension(imageFile.FileName).ToLowerInvariant();
+
+            //uzantı dizininin içerisinde yoksa geçerli değil.
+            if (!allowenExtensions.Contains(extensions))
+            {
+                ModelState.AddModelError("", "Geçerli bir resim türü seçiniz.");
+            }
+            else
+            {
+                var randomFileName = string.Format($"{Guid.NewGuid().ToString()}{extensions}");
+            }
+        }
         if (ModelState.IsValid)
         {
             model.ProductId = Repository.Products.Count + 1; //id sıfır görünüyordu artık 1 ekleyecek.
@@ -60,9 +76,7 @@ public class HomeController : Controller
         }
         ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name"); //Sayfa yenilendiğinde veriler gelmiyotdu bu yüzden burada da çağırdık.
         return View(model);
-
     }
-
 }
 
 //ViewBag = bir kere veri taşır.
