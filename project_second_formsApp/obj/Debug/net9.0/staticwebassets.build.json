@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d1RsbPnDL96TsMRyN/qhjVOLa0CwqL66/V/DmcwDQ1U=",
+  "Hash": "B0hko6RQtvfKGkCyArJU+Yc9mfgsdoySY30q+9pebs4=",
   "Source": "project_second_formsApp",
   "BasePath": "_content/project_second_formsApp",
   "Mode": "Default",
@@ -1527,6 +1527,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\4.jpg"
+    },
+    {
+      "Identity": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\8a7aadd8-e810-491a-a53e-03dde1a0f043.png",
+      "SourceId": "project_second_formsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\",
+      "BasePath": "_content/project_second_formsApp",
+      "RelativePath": "img/8a7aadd8-e810-491a-a53e-03dde1a0f043#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ugcifa14j9",
+      "Integrity": "nvb2s8pePmFUPin71PlfvzeHFjBhaujgZ0Sw7LU5jis=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\8a7aadd8-e810-491a-a53e-03dde1a0f043.png"
     },
     {
       "Identity": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\js\\site.js",
@@ -3732,6 +3753,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-pwd1sAgSwuniiKZbvrQHxsN3g2LxGoegLAy3i3o0w40="
+        }
+      ]
+    },
+    {
+      "Route": "img/8a7aadd8-e810-491a-a53e-03dde1a0f043.png",
+      "AssetFile": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\8a7aadd8-e810-491a-a53e-03dde1a0f043.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "740940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nvb2s8pePmFUPin71PlfvzeHFjBhaujgZ0Sw7LU5jis=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 21:03:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nvb2s8pePmFUPin71PlfvzeHFjBhaujgZ0Sw7LU5jis="
+        }
+      ]
+    },
+    {
+      "Route": "img/8a7aadd8-e810-491a-a53e-03dde1a0f043.ugcifa14j9.png",
+      "AssetFile": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\8a7aadd8-e810-491a-a53e-03dde1a0f043.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "740940"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nvb2s8pePmFUPin71PlfvzeHFjBhaujgZ0Sw7LU5jis=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 21:03:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ugcifa14j9"
+        },
+        {
+          "Name": "label",
+          "Value": "img/8a7aadd8-e810-491a-a53e-03dde1a0f043.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nvb2s8pePmFUPin71PlfvzeHFjBhaujgZ0Sw7LU5jis="
         }
       ]
     },

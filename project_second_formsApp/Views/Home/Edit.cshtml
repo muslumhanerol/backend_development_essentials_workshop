@@ -1,0 +1,52 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    @* Tüm hatalar validationları kullanıcıya göstermek. Product.cs de validation yaptık. *@
+    <div asp-validation-summary="All"></div>
+
+    @* ilk işlem olarak ProductId yi çektim. *@
+    <input type="hidden" asp-for="ProductId">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name"></span> @* Bölüm hatası. *@
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input asp-for="Price" class="form-control">
+        <span asp-validation-for="Name"></span>
+
+    </div>
+
+    @* eski hali *@
+    @* <div class="mb-3">
+        <label asp-for="Image" class="form-label"></label>
+        <input asp-for="Image" class="form-control">
+    </div> *@
+    @* yeni hali enctype="multipart/form-data" özellikli hali. Dosya seçme. *@
+    <div class="mb-3">
+        <input type="file" name="ImageFile" id="ImageFile" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CategoryId" class="form-label"></label>
+        <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-select">
+            <option value="0">Hepsi</option>
+        </select>
+    </div>
+
+    <div class="mb-3 form-check">
+        <input asp-for="IsActive" class="form-check-input">
+        <label asp-for="IsActive" class="form-check-label"></label>
+
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+
+
+@*  asp-for = Modeldeki properyt ile form öğesini eşleştiriyor.  *@

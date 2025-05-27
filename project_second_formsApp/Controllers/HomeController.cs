@@ -97,6 +97,22 @@ public class HomeController : Controller
         ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name"); //Sayfa yenilendiğinde veriler gelmiyotdu bu yüzden burada da çağırdık.
         return View(model);
     }
+
+    [HttpGet]
+    public IActionResult Edit(int? id) //int olarak id bilgisi alındı.
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        //ProductId üzerinden Products git productid ile id eşleşiyormu kontrol et.
+        var entity = Repository.Products.FirstOrDefault(p => p.ProductId == id);
+        if (entity == null)
+        {
+            return NotFound();
+        }
+    }
 }
 
 //ViewBag = bir kere veri taşır.
