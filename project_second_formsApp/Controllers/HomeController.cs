@@ -98,12 +98,13 @@ public class HomeController : Controller
         return View(model);
     }
 
+
     [HttpGet]
     public IActionResult Edit(int? id) //int olarak id bilgisi alındı.
     {
         if (id == null)
         {
-            return NotFound();
+            return NotFound(); //404 sayfasına gönder.
         }
 
         //ProductId üzerinden Products git productid ile id eşleşiyormu kontrol et.
@@ -112,6 +113,9 @@ public class HomeController : Controller
         {
             return NotFound();
         }
+
+        ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name"); //Sayfa yenilendiğinde veriler gelmiyotdu bu yüzden burada da çağırdık.
+        return View(entity);
     }
 }
 

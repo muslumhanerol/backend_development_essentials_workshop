@@ -32,6 +32,10 @@
     <div class="mb-3">
         <input type="file" name="ImageFile" id="ImageFile" class="form-control">
     </div>
+    <div>
+        <img src="~/img/@Model.Image" style="width:100px" alt="">
+        <input type="hidden" asp-for="Image">
+    </div>
 
     <div class="mb-3">
         <label asp-for="CategoryId" class="form-label"></label>
