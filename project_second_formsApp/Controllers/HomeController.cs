@@ -117,6 +117,55 @@ public class HomeController : Controller
         ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name"); //Sayfa yenilendiğinde veriler gelmiyotdu bu yüzden burada da çağırdık.
         return View(entity);
     }
+
+    [HttpPost]
+    public async Task<IActionResult> Edit(int id, Product model, IFormFile? imageFile)
+    {
+        var allowenExtensions = new[] { ".jpg", ".jpeg", ".png" };
+        if (imageFile != null)
+        {
+            //resmin uzantısı ile adını birbirinden ayırır.
+            var extensions = Path.GetExtension(imageFile.FileName).ToLowerInvariant();
+
+            //uzantı dizininin içerisinde yoksa geçerli değil.
+            if (!allowenExtensions.Contains(extensions))
+            {
+                ModelState.AddModelError("", "Geçerli bir resim türü seçiniz.");
+            }
+            else
+            {
+                //Belli bir formata dönüştürme. uniq isim ver extensions yaz.
+                var randomFileName = string.Format($"{Guid.NewGuid().ToString()}{extensions}");
+                //Resmi kaydetme yolu.
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", randomFileName);
+                try
+                {
+                    //bir kopyasını kaydet.
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(stream);
+                    }
+                    model.Image = randomFileName;
+                }
+                catch
+                {
+                    ModelState.AddModelError("", "Dosya yüklenirken bir hata oluştu!");
+                }
+            }
+        }
+        else
+        {
+            ModelState.AddModelError("", "Lütfen bir resim seçiniz!");
+        }
+        if (ModelState.IsValid)
+        {
+            model.ProductId = Repository.Products.Count + 1; //id sıfır görünüyordu artık 1 ekleyecek.
+            Repository.EditProduct(model); //Repository üzerinden CreateProduct ı çağır ve ona modele gelen bilgileri yazdır.
+            return RedirectToAction("Index");
+        }
+        ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name"); //Sayfa yenilendiğinde veriler gelmiyotdu bu yüzden burada da çağırdık.
+        return View(model);
+    }
 }
 
 //ViewBag = bir kere veri taşır.
