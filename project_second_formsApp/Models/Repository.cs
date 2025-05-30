@@ -31,6 +31,22 @@ namespace project_second_formsApp.Models
             _products.Add(entity); //entity bilgilerini productsa ekle
         }
 
+        public static void EditProduct(Product updateEntity)
+        {
+            var entity = _products.FirstOrDefault(p => p.ProductId == updateEntity.ProductId);
+            // _products üzerinden kontrol et product içindeki p.ProductId ile updateEntity üzerindeki ProductId aynı mı?
+            if (entity != null)
+            {
+                entity.Name = updateEntity.Name;
+                //entity üzerindeki name ile updateEntity üzerinden gelen name bilgisi değişecek.
+                entity.Price = updateEntity.Price;
+                entity.Image = updateEntity.Image;
+                entity.IsActive = updateEntity.IsActive;
+                entity.CategoryId = updateEntity.CategoryId;
+
+            }
+        }
+
         public static List<Category> Categories { get { return _categories; } }
         //Bu içeriği kullanmak için Controller>HomeController.cs 
 

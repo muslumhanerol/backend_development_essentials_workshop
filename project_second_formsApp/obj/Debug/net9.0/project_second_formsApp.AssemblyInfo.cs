@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("project_second_formsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42f954046b208d4dafe4a8a2955ed35f9b58211a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0262b78b99222359e12048c24bb4a8c82550e55b")]
 [assembly: System.Reflection.AssemblyProductAttribute("project_second_formsApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("project_second_formsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
