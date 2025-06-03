@@ -159,7 +159,7 @@ public class HomeController : Controller
         }
         if (ModelState.IsValid)
         {
-            model.ProductId = Repository.Products.Count + 1; //id sıfır görünüyordu artık 1 ekleyecek.
+
             Repository.EditProduct(model); //Repository üzerinden CreateProduct ı çağır ve ona modele gelen bilgileri yazdır.
             return RedirectToAction("Index");
         }

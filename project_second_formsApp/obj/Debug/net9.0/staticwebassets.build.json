@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d1RsbPnDL96TsMRyN/qhjVOLa0CwqL66/V/DmcwDQ1U=",
+  "Hash": "SmRlJuXAH2YHRyfvIW098NfseNC6TGnuVck6tM1zK/I=",
   "Source": "project_second_formsApp",
   "BasePath": "_content/project_second_formsApp",
   "Mode": "Default",
@@ -1527,6 +1527,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\4.jpg"
+    },
+    {
+      "Identity": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\a26b50f8-cfc6-430c-a9bb-b51f96abc2b4.png",
+      "SourceId": "project_second_formsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\",
+      "BasePath": "_content/project_second_formsApp",
+      "RelativePath": "img/a26b50f8-cfc6-430c-a9bb-b51f96abc2b4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "whlyjkwan8",
+      "Integrity": "rBukYlmWJamAKQuyxLiXZztzJrmM0CaYLXnvU6VCCvg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\a26b50f8-cfc6-430c-a9bb-b51f96abc2b4.png"
+    },
+    {
+      "Identity": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\be86e2c0-449a-4d0e-b884-670653eddd7d.png",
+      "SourceId": "project_second_formsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\",
+      "BasePath": "_content/project_second_formsApp",
+      "RelativePath": "img/be86e2c0-449a-4d0e-b884-670653eddd7d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "whlyjkwan8",
+      "Integrity": "rBukYlmWJamAKQuyxLiXZztzJrmM0CaYLXnvU6VCCvg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\be86e2c0-449a-4d0e-b884-670653eddd7d.png"
+    },
+    {
+      "Identity": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\eef727c9-bf27-47d8-a4a1-f0de6225276d.png",
+      "SourceId": "project_second_formsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\",
+      "BasePath": "_content/project_second_formsApp",
+      "RelativePath": "img/eef727c9-bf27-47d8-a4a1-f0de6225276d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xzr17j16ql",
+      "Integrity": "A5kOXs+zlpSmCue6GmtIW9G0L4znEqgmrPS3a6njnig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\eef727c9-bf27-47d8-a4a1-f0de6225276d.png"
     },
     {
       "Identity": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\js\\site.js",
@@ -3732,6 +3795,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-pwd1sAgSwuniiKZbvrQHxsN3g2LxGoegLAy3i3o0w40="
+        }
+      ]
+    },
+    {
+      "Route": "img/a26b50f8-cfc6-430c-a9bb-b51f96abc2b4.png",
+      "AssetFile": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\a26b50f8-cfc6-430c-a9bb-b51f96abc2b4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "737781"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rBukYlmWJamAKQuyxLiXZztzJrmM0CaYLXnvU6VCCvg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Jun 2025 13:48:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rBukYlmWJamAKQuyxLiXZztzJrmM0CaYLXnvU6VCCvg="
+        }
+      ]
+    },
+    {
+      "Route": "img/a26b50f8-cfc6-430c-a9bb-b51f96abc2b4.whlyjkwan8.png",
+      "AssetFile": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\a26b50f8-cfc6-430c-a9bb-b51f96abc2b4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "737781"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rBukYlmWJamAKQuyxLiXZztzJrmM0CaYLXnvU6VCCvg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Jun 2025 13:48:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "whlyjkwan8"
+        },
+        {
+          "Name": "label",
+          "Value": "img/a26b50f8-cfc6-430c-a9bb-b51f96abc2b4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rBukYlmWJamAKQuyxLiXZztzJrmM0CaYLXnvU6VCCvg="
+        }
+      ]
+    },
+    {
+      "Route": "img/be86e2c0-449a-4d0e-b884-670653eddd7d.png",
+      "AssetFile": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\be86e2c0-449a-4d0e-b884-670653eddd7d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "737781"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rBukYlmWJamAKQuyxLiXZztzJrmM0CaYLXnvU6VCCvg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Jun 2025 13:47:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rBukYlmWJamAKQuyxLiXZztzJrmM0CaYLXnvU6VCCvg="
+        }
+      ]
+    },
+    {
+      "Route": "img/be86e2c0-449a-4d0e-b884-670653eddd7d.whlyjkwan8.png",
+      "AssetFile": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\be86e2c0-449a-4d0e-b884-670653eddd7d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "737781"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rBukYlmWJamAKQuyxLiXZztzJrmM0CaYLXnvU6VCCvg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Jun 2025 13:47:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "whlyjkwan8"
+        },
+        {
+          "Name": "label",
+          "Value": "img/be86e2c0-449a-4d0e-b884-670653eddd7d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rBukYlmWJamAKQuyxLiXZztzJrmM0CaYLXnvU6VCCvg="
+        }
+      ]
+    },
+    {
+      "Route": "img/eef727c9-bf27-47d8-a4a1-f0de6225276d.png",
+      "AssetFile": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\eef727c9-bf27-47d8-a4a1-f0de6225276d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "727546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A5kOXs+zlpSmCue6GmtIW9G0L4znEqgmrPS3a6njnig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 20:44:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A5kOXs+zlpSmCue6GmtIW9G0L4znEqgmrPS3a6njnig="
+        }
+      ]
+    },
+    {
+      "Route": "img/eef727c9-bf27-47d8-a4a1-f0de6225276d.xzr17j16ql.png",
+      "AssetFile": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\eef727c9-bf27-47d8-a4a1-f0de6225276d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "727546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A5kOXs+zlpSmCue6GmtIW9G0L4znEqgmrPS3a6njnig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 20:44:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xzr17j16ql"
+        },
+        {
+          "Name": "label",
+          "Value": "img/eef727c9-bf27-47d8-a4a1-f0de6225276d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A5kOXs+zlpSmCue6GmtIW9G0L4znEqgmrPS3a6njnig="
         }
       ]
     },

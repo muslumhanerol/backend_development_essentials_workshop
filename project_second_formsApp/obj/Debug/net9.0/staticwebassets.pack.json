@@ -29,6 +29,18 @@
       "PackagePath": "staticwebassets\\img\\4.jpg"
     },
     {
+      "Id": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\a26b50f8-cfc6-430c-a9bb-b51f96abc2b4.png",
+      "PackagePath": "staticwebassets\\img\\a26b50f8-cfc6-430c-a9bb-b51f96abc2b4.png"
+    },
+    {
+      "Id": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\be86e2c0-449a-4d0e-b884-670653eddd7d.png",
+      "PackagePath": "staticwebassets\\img\\be86e2c0-449a-4d0e-b884-670653eddd7d.png"
+    },
+    {
+      "Id": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\img\\eef727c9-bf27-47d8-a4a1-f0de6225276d.png",
+      "PackagePath": "staticwebassets\\img\\eef727c9-bf27-47d8-a4a1-f0de6225276d.png"
+    },
+    {
       "Id": "C:\\GitHub\\backend_development_essentials_workshop\\project_second_formsApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
