@@ -47,6 +47,17 @@ namespace project_second_formsApp.Models
             }
         }
 
+
+        public static void DeleteProduct(Product entity)
+        {
+            var prdEntity = _products.FirstOrDefault(p => p.ProductId == entity.ProductId);
+
+            if (prdEntity != null)
+            {
+                _products.Remove(prdEntity);
+            }
+        }
+
         public static List<Category> Categories { get { return _categories; } }
         //Bu içeriği kullanmak için Controller>HomeController.cs 
 
