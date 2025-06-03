@@ -4,3 +4,15 @@
 # veritabanı bağlantı seçenekleri: https://learn.microsoft.com/en-us/ef/core/providers/?tabs=dotnet-core-cli
 # sql Lite Kurulumu: dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 9.0.5
 
+
+
+# dbContext = Uygulama ile veri tabanı arasındaki bağlantıyı sağlar.
+
+
+
+# 1. Data klasörü oluşturuldu.
+# 2. Data klasörü içerisinde Ogrenci.cs ve Kurs.cs oluşturulup içleri dolduruldu.
+# 3. Data klasörü içerisinde KursKayit.cs oluşturuldu, ilişkisel veritabanı için.
+# 4. dbContext için Data klasörü içerisinde DataContext.cs oluşturdum.
+
+
