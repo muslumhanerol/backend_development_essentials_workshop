@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using project_third_efcoreApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,10 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 //veritabanı bağlantısı.
+//DataContext= DataContext.cs 7. satır.
 builder.Services.AddDbContext<DataContext>(options =>
 {
-    var config = builder.Configuration;
-    var ConnectionString = config.GetConnectionString("database");
+    var config = builder.Configuration; //Konfigürasyon ayarlandı.
+    var ConnectionString = config.GetConnectionString("database"); //Konfigürasyon ettiğim ConnectionString adı "database".
+    options.UseSqlite(ConnectionString); //UseSqlite veritabanında bu ConnectionStringe göre oluştur.
 });
 
 var app = builder.Build();

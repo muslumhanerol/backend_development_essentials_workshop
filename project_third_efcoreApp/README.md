@@ -3,6 +3,10 @@
 
 # veritabanı bağlantı seçenekleri: https://learn.microsoft.com/en-us/ef/core/providers/?tabs=dotnet-core-cli
 # sql Lite Kurulumu: dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 9.0.5
+# for migration website = https://learn.microsoft.com/en-us/ef/core/cli/dotnet
+# for migration = dotnet tool install --global dotnet-ef
+# for migration design = dotnet add package Microsoft.EntityFrameworkCore.Design
+# create migration = dotnet ef migrations InitialCreate
 
 
 
