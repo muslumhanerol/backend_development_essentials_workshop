@@ -1,7 +1,16 @@
+using project_third_efcoreApp.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//veritabanı bağlantısı.
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    var config = builder.Configuration;
+    var ConnectionString = config.GetConnectionString("database");
+});
 
 var app = builder.Build();
 
