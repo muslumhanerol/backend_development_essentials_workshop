@@ -6,7 +6,8 @@
 # for migration website = https://learn.microsoft.com/en-us/ef/core/cli/dotnet
 # for migration = dotnet tool install --global dotnet-ef
 # for migration design = dotnet add package Microsoft.EntityFrameworkCore.Design
-# create migration = dotnet ef migrations InitialCreate
+# create migration = dotnet ef migrations add InitialCreate
+# how to see database = dotnet ef database update
 
 
 
