@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using project_third_efcoreApp.Data;
 
 namespace project_third_efcoreApp.Controllers
@@ -10,6 +11,12 @@ namespace project_third_efcoreApp.Controllers
         public OgrenciController(DataContext context)
         {
             _context = context;
+        }
+
+
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Ogrenciler.ToListAsync());
         }
 
         public IActionResult Create()
