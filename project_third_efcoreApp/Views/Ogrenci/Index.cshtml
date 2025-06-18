@@ -4,7 +4,31 @@
 <hr>
 
 <table class="table table-bordered"> 
+    <thead>  
+        <tr>
+            <th>@Html.DisplayNameFor(m=>m.OgrenciId) </th>
+            <th>@Html.DisplayNameFor(m=>m.OgrenciAd) </th>
+            <th>@Html.DisplayNameFor(m=>m.OgrenciSoyad) </th>
+            <th></th>            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+            <tr>
+                <td>@Html.DisplatFor(modelItem => item.OgrenciId) </td>
+                <td>@Html.DisplatFor(modelItem => item.OgrenciAd) </td>
+                <td>@Html.DisplatFor(modelItem => item.OgrenciSoyad) </td>
+                <td>
+                    <a href="" class="btn btn-primary btn-sm">Details</a>
+                    <a href="" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+
+            
+            </tr>
+        }
     
+    </tbody>
+
 
 
 </table>
