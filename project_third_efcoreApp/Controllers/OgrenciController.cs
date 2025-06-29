@@ -44,6 +44,37 @@ namespace project_third_efcoreApp.Controllers
             }
             return View(ogr);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, Ogrenci model)
+        {
+            if (id != model.OgrenciId)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(model); //context üzerinden update işlemini yap modeldeki verileri al.
+                    await _context.SaveChangesAsync();//Herhangi bir sorun yoksa işlemi yap.
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+
+                    if (_context.Ogrenciler.Any(o => o.OgrenciId == model.OgrenciId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Index");
+            }
+            return View(model);
+        }
     }
 }
 
