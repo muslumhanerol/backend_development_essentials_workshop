@@ -59,7 +59,7 @@ namespace project_third_efcoreApp.Controllers
                     _context.Update(model); //context üzerinden update işlemini yap modeldeki verileri al.
                     await _context.SaveChangesAsync();//Herhangi bir sorun yoksa işlemi yap.
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (DbUpdateConcurrencyException) //Aynı anda farklı tokenlar gelirse
                 {
 
                     if (_context.Ogrenciler.Any(o => o.OgrenciId == model.OgrenciId))
@@ -71,9 +71,9 @@ namespace project_third_efcoreApp.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction("Index");
+                return RedirectToAction("Index"); //Sorunsuz güncellendiyse
             }
-            return View(model);
+            return View(model); //Herhangi bir hata varsa
         }
     }
 }
