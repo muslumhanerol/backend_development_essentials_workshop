@@ -46,6 +46,7 @@ namespace project_third_efcoreApp.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken] //Güvenlik önlemi. Sistem sadece bizim oluşturduğumuz formdan gelen istekleri kabul eder. Eş zamanlı olarak iki farklı tokendan gelen veriyi kabul etmez.
         public async Task<IActionResult> Edit(int id, Ogrenci model)
         {
             if (id != model.OgrenciId)
