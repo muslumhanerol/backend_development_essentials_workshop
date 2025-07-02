@@ -76,6 +76,21 @@ namespace project_third_efcoreApp.Controllers
             }
             return View(model); //Herhangi bir hata varsa
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var ogrenci = await _context.Ogrenciler.FindAsync(id); //Ogrenci varlığı kontrolü
+            if (ogrenci == null)
+            {
+                return NotFound();
+            }
+            return View(ogrenci);
+        }
     }
 }
 
