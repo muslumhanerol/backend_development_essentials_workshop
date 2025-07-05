@@ -91,6 +91,21 @@ namespace project_third_efcoreApp.Controllers
             }
             return View(ogrenci);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete([FromForm] int id)
+        //int id = Delete.cshtml 6.satır name
+        {
+            var ogrenci = await _context.Ogrenciler.FindAsync(id); //Ogrenci varlığı kontrolü
+            if (ogrenci == null)
+            {
+                return NotFound();
+            }
+            _context.Ogrenciler.Remove(ogrenci); //gelen öğrenci bilgisini sil.
+            await _context.SaveChangesAsync(); //sonra context üzerine kaydet.
+            return RedirectToAction("Index");
+
+        }
     }
 }
 
