@@ -2,7 +2,8 @@
 
 <h2>Kurs Güncelle</h2>
 
-<form asp-action="Create" asp-controller="Kurs" method="post">
+<form asp-action="Edit" asp-controller="Kurs" method="post">
+    <input type="hidden" asp-for="KursId">
     <div class="mb-3">
         <label asp-for="Baslik" class="form-label"></label>
         <input asp-for="Baslik" class="form-control">
