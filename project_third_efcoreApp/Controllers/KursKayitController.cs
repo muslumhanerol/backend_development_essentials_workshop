@@ -25,5 +25,19 @@ namespace project_third_efcoreApp.Data
 
             return View();
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(KursKayit model)
+        {
+            model.KayitTarihi = DateTime.Now;
+            _context.KursKayitlari.Add(model); //Modelden gelen veriye göre kurs kayıtlarını ekle.
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+
+        }
+
     }
 }
+
+
+//KursKayit model=KursKayit.cs içerisi.
