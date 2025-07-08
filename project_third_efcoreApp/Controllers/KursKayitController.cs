@@ -19,7 +19,7 @@ namespace project_third_efcoreApp.Data
         }
         public async Task<IActionResult> Create()
         {
-            ViewBag.Ogrenciler = new SelectList(await _context.Ogrenciler.ToListAsync(), "OgrenciId", "OgrenciAd");
+            ViewBag.Ogrenciler = new SelectList(await _context.Ogrenciler.ToListAsync(), "OgrenciId", "Adsoyad");
 
             ViewBag.Kurslar = new SelectList(await _context.Kurslar.ToListAsync(), "KursId", "Baslik");
 
