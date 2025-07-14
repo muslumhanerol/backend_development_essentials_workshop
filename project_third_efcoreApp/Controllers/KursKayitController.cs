@@ -16,7 +16,7 @@ namespace project_third_efcoreApp.Data
 
         public async Task<IActionResult> Index()
         {
-            var kursKayitlari = await _context.KursKayitlari.ToListAsync();
+            var kursKayitlari = await _context.KursKayitlari.Include(o => o.Ogrenci).Include(o => o.Kurs).ToListAsync();
             return View(kursKayitlari);
         }
         public async Task<IActionResult> Create()

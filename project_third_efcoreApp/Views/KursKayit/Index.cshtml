@@ -1,6 +1,8 @@
 @model IEnumerable<KursKayit>
 
-<h2>Ögrenci Listesi</h2>
+<h2>Kayıt Listesi </h2>
+<a asp-controller="KursKayit" asp-action="Create" class="btn btn-primary">Kurs Ekle</a>
+<hr>
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -16,7 +18,6 @@
                 <td>@Html.DisplayFor(modelItem => item.KayitId)</td>
                 <td>@Html.DisplayFor(modelItem => item.Ogrenci.Adsoyad)</td>
                 <td>@Html.DisplayFor(modelItem => item.Kurs.Baslik)</td>
-
             </tr>
         }
     </tbody>
