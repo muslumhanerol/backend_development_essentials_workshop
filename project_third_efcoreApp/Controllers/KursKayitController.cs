@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -13,9 +14,10 @@ namespace project_third_efcoreApp.Data
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var kursKayitlari = await _context.KursKayitlari.ToListAsync();
+            return View(kursKayitlari);
         }
         public async Task<IActionResult> Create()
         {
