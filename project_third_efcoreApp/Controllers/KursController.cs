@@ -37,7 +37,7 @@ namespace project_third_efcoreApp.Controllers
             {
                 return NotFound();
             }
-            var ogr = await _context.Kurslar.FirstOrDefaultAsync(o => o.KursId == id);
+            var ogr = await _context.Kurslar.Include(k => k.KursKayitlari).ThenInclude(o => o.Ogrenci).FirstOrDefaultAsync(o => o.KursId == id);
             if (ogr == null)
             {
                 return NotFound();
