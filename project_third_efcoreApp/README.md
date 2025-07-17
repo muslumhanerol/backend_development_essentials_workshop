@@ -8,7 +8,7 @@
 # for migration design = dotnet add package Microsoft.EntityFrameworkCore.Design
 # create migration = dotnet ef migrations add InitialCreate
 # how to see database = dotnet ef database update
-
+# son migrationu geri alma = dotnet ef migrations remove
 
 
 # dbContext = Uygulama ile veri tabanı arasındaki bağlantıyı sağlar.
