@@ -11,6 +11,8 @@ namespace project_third_efcoreApp.Data
         public string Adsoyad { get { return this.OgrenciAd + " " + this.OgrenciSoyad; } }
         public string? Eposta { get; set; }
         public string? Telefon { get; set; }
+        public ICollection<KursKayit> KursKayitlari { get; set; } = new List<KursKayit>();
+        //Ogrenci tablosu olarak kurs kaydın içindeki kurs bilgilerini getir.
 
     }
 }
